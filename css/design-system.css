@@ -1,0 +1,722 @@
+/* ============================================================
+   PHOTON DESIGN SYSTEM — global entry point.
+   Consumers link THIS file. Import lines only.
+   ============================================================ */
+
+/* ============================================================
+   PHOTON — FONTS
+   IBM Plex Sans (UI + display) + IBM Plex Mono (technical labels,
+   metrics, code). Engineering-grade, neutral, premium — not Inter.
+   NOTE: loaded from Google Fonts CDN. For production, self-host the
+   binaries and replace this @import with local @font-face rules.
+   ============================================================ */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-400-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-500-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-600-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-600-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-600-3.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-600-4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-mono-600-5.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-400-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-2.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-3.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-4.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/ibm-plex-sans-700-6.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* ============================================================
+   PHOTON — COLOR TOKENS
+   Enterprise navy + electric azure. Cool, calm, engineering.
+   ============================================================ */
+
+:root {
+  /* ---- Brand navy (deep, slightly desaturated blue-black) ---- */
+  --navy-950: #06121E; /* hero / inverse backgrounds */
+  --navy-900: #0A1A2A; /* strongest ink, primary button */
+  --navy-800: #0F2336;
+  --navy-700: #163049;
+  --navy-600: #1E4260;
+  --navy-500: #2A567C;
+
+  /* ---- Cool neutral grays (blue-tinted) ---- */
+  --gray-0:   #FFFFFF;
+  --gray-25:  #FAFBFC;
+  --gray-50:  #F4F6F8;
+  --gray-100: #E9EDF1;
+  --gray-200: #D8DEE6;
+  --gray-300: #BCC6D1;
+  --gray-400: #94A2B2;
+  --gray-500: #6B7B8C;
+  --gray-600: #4C5A6A;
+  --gray-700: #33414F;
+  --gray-800: #1E2A36;
+
+  /* ---- Accent: electric azure / cyan (CTAs, highlights) ---- */
+  --accent-100: #D6F1FB;
+  --accent-200: #A8E2F6;
+  --accent-300: #5FC8EE;
+  --accent-400: #2DBCEC;
+  --accent-500: #14AEE0; /* primary accent */
+  --accent-600: #0E8FBC;
+  --accent-700: #0B7299;
+
+  /* ---- Semantic signal colors (used sparingly) ---- */
+  --positive-500: #1AA67E; /* outcome / improvement metrics */
+  --positive-100: #DCF3EC;
+  --legacy-500:   #C5862C; /* "before" / legacy state in case studies */
+  --legacy-100:   #F6ECD7;
+  --danger-500:   #D2543E;
+  --danger-100:   #F8E2DD;
+
+  /* ============================================================
+     SEMANTIC ALIASES (light surface — the default)
+     ============================================================ */
+
+  /* Backgrounds & surfaces */
+  --bg-page:          var(--gray-25);
+  --surface-card:     var(--gray-0);
+  --surface-subtle:   var(--gray-50);
+  --surface-sunken:   var(--gray-100);
+  --surface-inverse:  var(--navy-950);
+  --surface-inverse-2:var(--navy-900);
+
+  /* Text */
+  --text-strong:   var(--navy-900);
+  --text-body:     var(--gray-700);
+  --text-muted:    var(--gray-500);
+  --text-faint:    var(--gray-400);
+  --text-accent:   var(--accent-600);
+  --text-on-inverse:        rgba(255, 255, 255, 0.94);
+  --text-on-inverse-muted:  rgba(213, 226, 238, 0.66);
+  --text-on-inverse-faint:  rgba(213, 226, 238, 0.42);
+
+  /* Borders & dividers */
+  --border-subtle:  var(--gray-100);
+  --border:         var(--gray-200);
+  --border-strong:  var(--gray-300);
+  --border-inverse: rgba(255, 255, 255, 0.12);
+  --border-accent:  var(--accent-300);
+
+  /* Accent semantics */
+  --accent:         var(--accent-500);
+  --accent-hover:   var(--accent-400);
+  --accent-press:   var(--accent-600);
+  --accent-soft-bg: var(--accent-100);
+  --accent-on:      var(--navy-950); /* text/icon ON an accent fill */
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(20, 174, 224, 0.35);
+
+  /* Hero/blueprint motif lines */
+  --grid-line:        rgba(255, 255, 255, 0.045);
+  --grid-line-strong: rgba(255, 255, 255, 0.09);
+  --grid-line-light:  rgba(10, 26, 42, 0.06);
+}
+
+/* ============================================================
+   PHOTON — TYPOGRAPHY TOKENS
+   ============================================================ */
+
+:root {
+  /* ---- Families ---- */
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ---- Weights ---- */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+
+  /* ---- Type scale (size / line-height) ----
+     Display sizes are fluid for hero usage. */
+  --text-display-1-size: clamp(3rem, calc(1.6rem + 4.6vw), 5.25rem);   /* 48 → 84 */
+  --text-display-1-lh:   1.04;
+  --text-display-2-size: clamp(2.4rem, calc(1.5rem + 3vw), 3.5rem);    /* ~38 → 56 */
+  --text-display-2-lh:   1.06;
+
+  --text-h1-size: 2.5rem;   /* 40 */
+  --text-h1-lh:   1.12;
+  --text-h2-size: 2rem;     /* 32 */
+  --text-h2-lh:   1.18;
+  --text-h3-size: 1.5rem;   /* 24 */
+  --text-h3-lh:   1.28;
+  --text-h4-size: 1.25rem;  /* 20 */
+  --text-h4-lh:   1.4;
+
+  --text-body-lg-size: 1.1875rem; /* 19 */
+  --text-body-lg-lh:   1.6;
+  --text-body-size:    1.0625rem; /* 17 */
+  --text-body-lh:      1.62;
+  --text-sm-size:      0.9375rem; /* 15 */
+  --text-sm-lh:        1.55;
+  --text-xs-size:      0.8125rem; /* 13 */
+  --text-xs-lh:        1.5;
+
+  /* ---- Eyebrow / mono label ---- */
+  --text-eyebrow-size: 0.8125rem; /* 13 */
+  --text-eyebrow-lh:   1.3;
+  --eyebrow-tracking:  0.18em;
+
+  /* ---- Letter-spacing ---- */
+  --tracking-display: -0.022em;
+  --tracking-heading: -0.014em;
+  --tracking-tight:   -0.008em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.02em;
+  --tracking-mono:    0.04em;
+
+  /* ---- Semantic aliases ---- */
+  --font-display: var(--font-sans);
+  --font-body:    var(--font-sans);
+  --font-label:   var(--font-mono);
+}
+
+/* ============================================================
+   PHOTON — SPACING & LAYOUT TOKENS
+   4px base unit. Generous whitespace for the premium feel.
+   ============================================================ */
+
+:root {
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4  */
+  --space-2:  0.5rem;   /* 8  */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  2.5rem;   /* 40 */
+  --space-8:  3rem;     /* 48 */
+  --space-9:  4rem;     /* 64 */
+  --space-10: 5rem;     /* 80 */
+  --space-11: 6rem;     /* 96 */
+  --space-12: 8rem;     /* 128 */
+
+  /* ---- Layout ---- */
+  --container-max:  1200px;
+  --container-wide: 1320px;
+  --container-text: 720px;  /* prose measure */
+  --gutter:         clamp(1.25rem, 5vw, 4rem); /* @kind spacing */
+  --section-y:      clamp(4rem, 8vw, 8rem); /* @kind spacing */
+
+  /* ---- Radii ---- */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   20px;
+  --radius-2xl:  28px;
+  --radius-full: 999px;
+
+  /* ---- Border widths ---- */
+  --border-w:        1px;
+  --border-w-strong: 1.5px;
+}
+
+/* ============================================================
+   PHOTON — ELEVATION & MOTION TOKENS
+   Subtle, cool-tinted shadows. Calm, precise motion. No bounce.
+   ============================================================ */
+
+:root {
+  /* ---- Shadows (cool navy-tinted, layered) ---- */
+  --shadow-xs: 0 1px 2px rgba(10, 26, 42, 0.06);
+  --shadow-sm: 0 2px 8px rgba(10, 26, 42, 0.07);
+  --shadow-md: 0 10px 28px -10px rgba(10, 26, 42, 0.16);
+  --shadow-lg: 0 24px 60px -18px rgba(10, 26, 42, 0.22);
+  --shadow-xl: 0 40px 90px -24px rgba(6, 18, 30, 0.32);
+
+  /* Accent glow — for the primary "electric" CTA only */
+  --shadow-accent: 0 8px 24px -8px rgba(20, 174, 224, 0.45);
+
+  /* Inset hairline for inputs */
+  --shadow-inset: inset 0 1px 2px rgba(10, 26, 42, 0.05);
+
+  /* ---- Motion ---- */
+  --dur-fast:  140ms; /* @kind other */
+  --dur:       240ms; /* @kind other */
+  --dur-slow:  420ms; /* @kind other */
+  --dur-slower:680ms; /* @kind other */
+
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --ease-emph:   cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ============================================================
+   PHOTON — BASE ELEMENTS & UTILITY CLASSES
+   Minimal element defaults + a few shared helpers used across
+   components and UI kits. Tokens come from the imported files.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-lh);
+  color: var(--text-body);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--text-strong);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-heading);
+  margin: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--accent-200); color: var(--navy-900); }
+
+/* ---- Layout helpers ---- */
+.nb-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.nb-container--wide { max-width: var(--container-wide); }
+
+/* ---- Eyebrow / mono section label ---- */
+.nb-eyebrow {
+  font-family: var(--font-label);
+  font-size: var(--text-eyebrow-size);
+  line-height: var(--text-eyebrow-lh);
+  letter-spacing: var(--eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--text-accent);
+  font-weight: var(--weight-medium);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.nb-eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 1.5px;
+  background: var(--accent);
+  display: inline-block;
+}
+.nb-eyebrow--on-inverse { color: var(--accent-300); }
+
+/* ---- Blueprint grid backdrop ---- */
+.nb-blueprint {
+  background-color: var(--surface-inverse);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: center;
+}
+.nb-blueprint--light {
+  background-color: var(--gray-50);
+  background-image:
+    linear-gradient(var(--grid-line-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-light) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: center;
+}
+
+/* ---- Display type helpers ---- */
+.nb-display-1 {
+  font-family: var(--font-display);
+  font-size: var(--text-display-1-size);
+  line-height: var(--text-display-1-lh);
+  letter-spacing: var(--tracking-display);
+  font-weight: var(--weight-semibold);
+  color: var(--text-strong);
+}
+.nb-display-2 {
+  font-family: var(--font-display);
+  font-size: var(--text-display-2-size);
+  line-height: var(--text-display-2-lh);
+  letter-spacing: var(--tracking-display);
+  font-weight: var(--weight-semibold);
+  color: var(--text-strong);
+}
+
+/* Focus visibility */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
+}
+

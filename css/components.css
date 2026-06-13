@@ -1,0 +1,421 @@
+/* ============================================================
+   PHOTON — COMPONENT STYLES
+   Buttons, badges, cards, forms, nav, footer, layout grids.
+   Depends on design-system.css for tokens.
+   ============================================================ */
+
+/* ---- Reset / base ---- */
+button { font: inherit; cursor: pointer; border: none; background: none; }
+img    { display: block; }
+ul     { margin: 0; padding: 0; list-style: none; }
+p      { margin: 0; }
+
+/* ================================================================
+   BUTTONS
+   ================================================================ */
+.nb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: 0.9375rem;    /* 15px default */
+  line-height: 1;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out);
+}
+.nb-btn--sm  { font-size: 0.875rem; padding: 7px 13px; }
+.nb-btn--lg  { font-size: 1rem; padding: 13px 22px; }
+
+.nb-btn--accent  { background: var(--accent); color: #fff; }
+.nb-btn--accent:hover  { background: var(--accent-hover); box-shadow: var(--shadow-accent); }
+
+.nb-btn--primary { background: var(--navy-800); color: #fff; }
+.nb-btn--primary:hover { background: var(--navy-700); }
+
+.nb-btn--secondary {
+  background: var(--surface-card);
+  color: var(--text-strong);
+  border-color: var(--border);
+}
+.nb-btn--secondary:hover {
+  background: var(--surface-subtle);
+  border-color: var(--border-strong);
+}
+
+.nb-btn--ghost { color: var(--text-body); }
+.nb-btn--ghost:hover { background: var(--surface-subtle); }
+
+/* ================================================================
+   BADGES
+   ================================================================ */
+.nb-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--weight-medium);
+  padding: 3px 9px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+.nb-badge--tech {
+  background: var(--surface-subtle);
+  color: var(--text-body);
+  border: 1px solid var(--border);
+}
+.nb-badge--accent {
+  background: var(--accent-100);
+  color: var(--accent-700);
+  border: 1px solid var(--accent-200);
+}
+
+/* ================================================================
+   CARDS
+   ================================================================ */
+.nb-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.nb-card--ruled {
+  border-color: var(--border);
+}
+.nb-card--interactive {
+  cursor: pointer;
+  transition: border-color var(--dur-fast), box-shadow var(--dur-fast);
+}
+.nb-card--interactive:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+/* ================================================================
+   ICON BADGE  (accent-coloured square chip)
+   ================================================================ */
+.nb-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  background: var(--accent-100);
+  color: var(--accent-700);
+  flex-shrink: 0;
+}
+.nb-icon-badge--navy {
+  background: var(--surface-sunken);
+  color: var(--navy-700);
+}
+
+/* ================================================================
+   STAT  (metric + label, used in hero)
+   ================================================================ */
+.nb-stat { display: flex; flex-direction: column; gap: 4px; }
+.nb-stat__value {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-semibold);
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: var(--tracking-display);
+  color: var(--text-strong);
+}
+.nb-stat__suffix { font-size: 1.5rem; }
+.nb-stat__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ================================================================
+   SERVICE CARD
+   ================================================================ */
+.nb-service-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.nb-service-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.nb-service-card__index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-600);
+}
+.nb-service-card h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.nb-service-card__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--border-subtle);
+}
+.nb-service-card__row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.nb-service-card__row-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+.nb-service-card__row p {
+  font-size: 0.9375rem;
+  color: var(--text-body);
+  line-height: 1.55;
+}
+
+/* ================================================================
+   BEFORE / AFTER  (case studies)
+   ================================================================ */
+.nb-ba {
+  display: grid;
+  grid-template-columns: 1fr 36px 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+.nb-ba__panel {
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+.nb-ba__panel--before {
+  border: 1px solid var(--border);
+  background: var(--surface-card);
+}
+.nb-ba__panel--after {
+  border: 1px solid var(--accent-200);
+  background: var(--accent-100);
+}
+.nb-ba__label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.nb-ba__label--before { color: var(--legacy-500); }
+.nb-ba__label--after  { color: var(--accent-700); }
+.nb-ba__arrow {
+  display: grid;
+  place-items: center;
+  color: var(--text-faint);
+}
+.nb-ba ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.nb-ba li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.nb-ba li i { flex-shrink: 0; margin-top: 2px; }
+
+/* ================================================================
+   CASE STUDY CARD
+   ================================================================ */
+.nb-case-study {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+}
+.nb-case-study__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+.nb-case-study__metric-value {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-semibold);
+  font-size: 2.125rem;
+  letter-spacing: var(--tracking-display);
+  color: var(--positive-500);
+  line-height: 1;
+}
+.nb-case-study__metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ================================================================
+   FORM INPUTS
+   ================================================================ */
+.nb-field { display: flex; flex-direction: column; gap: 6px; }
+
+.nb-label {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: var(--weight-medium);
+  color: var(--text-strong);
+}
+
+.nb-input,
+.nb-textarea,
+select.nb-input {
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--text-strong);
+  background: var(--surface-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  width: 100%;
+  transition: border-color var(--dur-fast);
+  box-shadow: var(--shadow-inset);
+}
+.nb-input::placeholder,
+.nb-textarea::placeholder { color: var(--text-faint); }
+.nb-input:focus,
+.nb-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+.nb-textarea { resize: vertical; line-height: 1.55; }
+
+/* ================================================================
+   NAVIGATION
+   ================================================================ */
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background var(--dur) var(--ease-out),
+              border-color var(--dur) var(--ease-out),
+              backdrop-filter var(--dur) var(--ease-out);
+}
+#site-header.nb-nav--solid {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(180%) blur(14px);
+  border-bottom-color: var(--border);
+}
+.nb-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+.nb-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+.nb-nav-wordmark {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  font-size: 1.1875rem;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  transition: color var(--dur-fast);
+}
+
+.nb-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nb-nav-links a {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: var(--weight-medium);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-body);
+  transition: color var(--dur-fast), background var(--dur-fast);
+}
+.nb-nav-links a:hover { color: var(--text-strong); background: var(--surface-subtle); }
+.nb-nav-links a.active { color: var(--text-strong); background: var(--surface-sunken); }
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+.nb-footer-col-title {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 12px;
+}
+.nb-footer-col a {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  margin-bottom: 12px;
+  transition: color var(--dur-fast);
+}
+.nb-footer-col a:hover { color: var(--text-strong); }
+
+/* ================================================================
+   LAYOUT GRID HELPERS  (responsive)
+   ================================================================ */
+.nb-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.nb-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.nb-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+/* two-up trust / about layout */
+.nb-trust { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; }
+
+/* footer grid */
+.nb-footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; align-items: start; }
+
+@media (max-width: 1024px) {
+  .nb-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .nb-grid-2,
+  .nb-grid-3   { grid-template-columns: 1fr; }
+  .nb-grid-4   { grid-template-columns: 1fr; }
+  .nb-trust    { grid-template-columns: 1fr; gap: 32px; }
+  .nb-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .nb-ba { grid-template-columns: 1fr; }
+  .nb-ba__arrow { display: none; }
+  .nb-nav-links { display: none; }
+  .nb-service-card__row { grid-template-columns: 80px 1fr; }
+}
+@media (max-width: 480px) {
+  .nb-footer-grid { grid-template-columns: 1fr; }
+  .nb-case-study { padding: 24px; }
+}

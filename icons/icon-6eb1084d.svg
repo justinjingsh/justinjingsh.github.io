@@ -1,0 +1,8 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Photon">
+  <rect x="0.5" y="0.5" width="47" height="47" rx="11" fill="#0F2336" stroke="rgba(255,255,255,0.14)"></rect>
+  <path d="M14 34 L34 14" stroke="#14AEE0" stroke-width="2.4" stroke-linecap="round"></path>
+  <path d="M14 34 L14 24" stroke="#5C6E82" stroke-width="2.4" stroke-linecap="round"></path>
+  <path d="M34 14 L34 24" stroke="#5C6E82" stroke-width="2.4" stroke-linecap="round"></path>
+  <circle cx="14" cy="34" r="4" fill="#06121E" stroke="#5FC8EE" stroke-width="2.2"></circle>
+  <circle cx="34" cy="14" r="4" fill="#14AEE0"></circle>
+</svg>
