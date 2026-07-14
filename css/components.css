@@ -345,7 +345,7 @@ select.nb-input {
 .nb-nav-wordmark {
   font-family: var(--font-display);
   font-weight: var(--weight-semibold);
-  font-size: 1.1875rem;
+  font-size: 1.5rem;
   letter-spacing: -0.02em;
   color: var(--text-strong);
   transition: color var(--dur-fast);

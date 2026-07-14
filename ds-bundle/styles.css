@@ -1,5 +1,0 @@
-/* Photon Design System — main style entry
-   Loads IBM Plex fonts from Google Fonts, then all Photon tokens + component styles. */
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
-@import './_ds_bundle.css';

@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { ArrowRight, Mail, Linkedin, MapPin, Check, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Mail, Check, ShieldCheck } from 'lucide-react'
 
 const QUALIFICATION = [
   'IT Executives (CTO / CIO / IT Director) leading or planning an AWS cloud transformation',
@@ -16,12 +16,35 @@ const DISCUSS = [
   'A recommended starting point: which service product fits your situation',
 ]
 
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkoakrby'
+
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState(false)
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSubmitted(true)
+    setSubmitting(true)
+    setError(false)
+
+    const form = e.target
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      })
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        setError(true)
+      }
+    } catch {
+      setError(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   function handleReset() {
@@ -30,22 +53,8 @@ export default function ContactPage() {
 
   return (
     <>
-      {/* ── PAGE HEADER ── */}
-      <div className="nb-blueprint--light" style={{ position: 'relative', overflow: 'hidden', marginTop: '-76px' }}>
-        <div style={{ position: 'absolute', width: '560px', height: '560px', right: '-160px', top: '-260px', background: 'radial-gradient(circle,rgba(20,174,224,.07),transparent 60%)' }} />
-        <div className="nb-container" style={{ position: 'relative', paddingTop: '96px', paddingBottom: '72px' }}>
-          <span className="nb-eyebrow">Book a Discovery Call</span>
-          <h1 className="nb-display-2" style={{ marginTop: '20px', maxWidth: '760px' }}>
-            30-Minute Architecture Strategy Session.
-          </h1>
-          <p style={{ marginTop: '22px', fontSize: '19px', lineHeight: 1.6, color: 'var(--text-muted)', maxWidth: '640px' }}>
-            A free, no-obligation session to discuss your cloud challenges and leave you with a clear direction. No pitch. No sales deck. Just an honest expert assessment.
-          </p>
-        </div>
-      </div>
-
       {/* ── CONTACT BODY ── */}
-      <section style={{ background: 'var(--bg-page)', paddingBlock: 'var(--section-y)' }}>
+      <section style={{ background: 'var(--bg-page)', paddingTop: 'var(--space-9)', paddingBottom: 'var(--section-y)' }}>
         <div className="nb-container">
           <div className="nb-trust" style={{ display: 'grid', gridTemplateColumns: '1.3fr 1fr', gap: '56px', alignItems: 'start' }}>
 
@@ -55,31 +64,31 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   <div>
                     <h3 style={{ fontSize: '22px', margin: '0 0 6px' }}>Send us a note</h3>
-                    <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>We reply personally within one business day to schedule your discovery call.</p>
+                    <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>We reply within one business day.</p>
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '18px' }}>
                     <div className="nb-field">
                       <label className="nb-label" htmlFor="name">Full name</label>
-                      <input className="nb-input" id="name" type="text" placeholder="Jane Smith" required />
+                      <input className="nb-input" id="name" name="name" type="text" placeholder="Jane Smith" required />
                     </div>
                     <div className="nb-field">
                       <label className="nb-label" htmlFor="email">Work email</label>
-                      <input className="nb-input" id="email" type="email" placeholder="you@company.com" required />
+                      <input className="nb-input" id="email" name="email" type="email" placeholder="you@company.com" required />
                     </div>
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '18px' }}>
                     <div className="nb-field">
                       <label className="nb-label" htmlFor="company">Company</label>
-                      <input className="nb-input" id="company" type="text" placeholder="Acme Corporation" required />
+                      <input className="nb-input" id="company" name="company" type="text" placeholder="Acme Corporation" required />
                     </div>
                     <div className="nb-field">
                       <label className="nb-label" htmlFor="role">Your role</label>
-                      <input className="nb-input" id="role" type="text" placeholder="CTO / IT Director / Architect" required />
+                      <input className="nb-input" id="role" name="role" type="text" placeholder="CTO / IT Director / Architect" required />
                     </div>
                   </div>
                   <div className="nb-field">
                     <label className="nb-label" htmlFor="challenge">Primary challenge</label>
-                    <select className="nb-input" id="challenge">
+                    <select className="nb-input" id="challenge" name="challenge">
                       <option value="">Select your primary challenge</option>
                       <option value="migration">Cloud migration stalled or not started</option>
                       <option value="modernisation">Legacy system modernisation</option>
@@ -94,16 +103,22 @@ export default function ContactPage() {
                     <textarea
                       className="nb-textarea"
                       id="message"
+                      name="message"
                       rows={5}
                       placeholder="We have a legacy system we want to move to AWS, but previous attempts stalled due to…"
                     />
                   </div>
+                  {error && (
+                    <p style={{ fontSize: '13px', color: 'var(--negative-500, #d92d20)', margin: 0 }}>
+                      Something went wrong sending your message. Please try again, or email us directly.
+                    </p>
+                  )}
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '14px' }}>
                     <span style={{ fontSize: '13px', color: 'var(--text-faint)', fontFamily: 'var(--font-mono)' }}>
                       Response within 1 business day
                     </span>
-                    <button type="submit" className="nb-btn nb-btn--accent nb-btn--lg">
-                      Send Message
+                    <button type="submit" className="nb-btn nb-btn--accent nb-btn--lg" disabled={submitting}>
+                      {submitting ? 'Sending…' : 'Send Message'}
                       <ArrowRight size={18} />
                     </button>
                   </div>
@@ -115,7 +130,7 @@ export default function ContactPage() {
                   </span>
                   <h3 style={{ fontSize: '24px', margin: '6px 0 0' }}>Thanks — message received.</h3>
                   <p style={{ color: 'var(--text-muted)', fontSize: '16px', lineHeight: 1.6, maxWidth: '420px' }}>
-                    Justin will review your note personally and get back to you within one business day to schedule your discovery call.
+                    Justin will review your note and get back to you within one business day.
                   </p>
                   <div style={{ marginTop: '8px' }}>
                     <button type="button" className="nb-btn nb-btn--secondary" onClick={handleReset}>
@@ -167,8 +182,6 @@ export default function ContactPage() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {[
                   { icon: <Mail size={20} />, label: 'Email', value: 'support@lyranova.com.au', href: 'mailto:support@lyranova.com.au' },
-                  { icon: <Linkedin size={20} />, label: 'LinkedIn', value: '/in/', href: 'https://linkedin.com/in/test' },
-                  { icon: <MapPin size={20} />, label: 'Based', value: 'Remote · Australia hours' },
                 ].map(({ icon, label, value, href }) => (
                   <div key={label} style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
                     <span className="nb-icon-badge nb-icon-badge--navy">{icon}</span>

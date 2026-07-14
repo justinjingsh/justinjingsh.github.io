@@ -108,12 +108,6 @@ export default function AboutPage() {
               <p>
                 You work directly with me. Not a project manager. Not a graduate consultant. The person who designed the solution is the person who delivers it.
               </p>
-              <div style={{ paddingTop: '8px' }}>
-                <Link href="/contact" className="nb-btn nb-btn--primary">
-                  Book a Discovery Call
-                  <ArrowRight size={17} />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

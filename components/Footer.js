@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="nb-footer-grid">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '320px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '11px' }}>
-              <img src="/icons/icon-a2eee9cc.svg" width={34} height={34} alt="" />
+              <img src="/icons/lyranova-mark-light.svg" width={38} height={38} alt="" />
               <span
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontWeight: 600,
-                  fontSize: '19px',
+                  fontSize: '24px',
                   letterSpacing: '-0.02em',
                   color: 'var(--text-strong)',
                 }}
@@ -37,14 +37,12 @@ export default function Footer() {
 
           <div className="nb-footer-col">
             <div className="nb-footer-col-title">Engage</div>
-            <Link href="/contact">Book a Discovery Call</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/about">Retainer Advisory</Link>
           </div>
 
           <div className="nb-footer-col">
-            <div className="nb-footer-col-title">Elsewhere</div>
-            <a href="https://linkedin.com/in/justinjing" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <div className="nb-footer-col-title">Contact Us</div>
             <a href="mailto:support@lyranova.com.au">support@lyranova.com.au</a>
           </div>
         </div>

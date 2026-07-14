@@ -30,8 +30,8 @@ css/
 public/
   fonts/              — self-hosted IBM Plex Mono (400/500/600) and IBM Plex Sans (700) as woff2
   icons/
-    icon-6eb1084d.svg — Lyranova logo mark (dark backgrounds / transparent nav)
-    icon-a2eee9cc.svg — Lyranova logo mark (light backgrounds / solid nav)
+    lyranova-mark-dark.svg  — Lyranova sparkle logo mark, bright variant (for dark backgrounds)
+    lyranova-mark-light.svg — Lyranova sparkle logo mark, deep-blue variant (for light backgrounds; used in Nav/Footer)
 
 .github/workflows/deploy.yml — GitHub Actions: npm ci → next build → deploy out/ to GitHub Pages
 ```

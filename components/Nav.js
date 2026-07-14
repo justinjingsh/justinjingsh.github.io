@@ -22,9 +22,9 @@ export default function Nav() {
       <div className="nb-container nb-nav-inner">
         <Link href="/" className="nb-nav-logo">
           <img
-            src="/icons/icon-a2eee9cc.svg"
-            width={34}
-            height={34}
+            src="/icons/lyranova-mark-light.svg"
+            width={38}
+            height={38}
             alt="Lyranova"
           />
           <span className="nb-nav-wordmark">Lyranova</span>
@@ -42,9 +42,8 @@ export default function Nav() {
           <Link href="/insights" className={isActive(pathname, '/insights') ? 'active' : undefined}>
             Insights
           </Link>
-          <span style={{ width: '12px' }} />
-          <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--sm">
-            Book a Discovery Call
+          <Link href="/contact" className={isActive(pathname, '/contact') ? 'active' : undefined}>
+            Contact
           </Link>
         </nav>
       </div>

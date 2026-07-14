@@ -166,22 +166,6 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
-
-      {/* ── CLOSING CTA ── */}
-      <div style={{ background: 'var(--accent-soft-bg)' }}>
-        <div className="nb-container" style={{ paddingBlock: '72px', textAlign: 'center' }}>
-          <span className="nb-eyebrow">Your transformation is next</span>
-          <h2 className="nb-display-2" style={{ fontSize: '38px', maxWidth: '680px', marginInline: 'auto', marginTop: '18px' }}>
-            Book a discovery call and leave with a clear modernisation path.
-          </h2>
-          <div style={{ marginTop: '28px' }}>
-            <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--lg">
-              Book a 30-Min Discovery Call
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </div>
     </>
   )
 }

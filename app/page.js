@@ -127,10 +127,6 @@ export default function HomePage() {
               We help mid-market and large enterprises design scalable AWS cloud architectures, modernise legacy systems, and implement high-impact cloud transformation programs with pragmatic delivery frameworks.
             </p>
             <div style={{ display: 'flex', gap: '14px', marginTop: '36px', flexWrap: 'wrap' }}>
-              <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--lg">
-                Book a 30-Min Discovery Call
-                <ArrowRight size={18} />
-              </Link>
               <Link href="/services" className="nb-btn nb-btn--secondary nb-btn--lg">
                 Explore Our Services
               </Link>
@@ -270,28 +266,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ── CLOSING CTA ── */}
-      <div style={{ background: 'var(--bg-page)' }}>
-        <div className="nb-container" style={{ paddingBlock: '80px', textAlign: 'center' }}>
-          <span className="nb-eyebrow">Start with clarity</span>
-          <h2
-            className="nb-display-2"
-            style={{ marginTop: '18px', fontSize: '44px', maxWidth: '800px', marginInline: 'auto' }}
-          >
-            Book a 30-minute Architecture Strategy Session and leave with a clear modernisation path.
-          </h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '18px', maxWidth: '560px', marginInline: 'auto', marginTop: '20px', lineHeight: 1.6 }}>
-            No commitment. No pitch. A frank assessment of your current architecture and the fastest path to your cloud destination.
-          </p>
-          <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', marginTop: '32px' }}>
-            <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--lg">
-              Book a Discovery Call
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </div>
     </>
   )
 }

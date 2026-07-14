@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Clock, ArrowUpRight } from 'lucide-react'
+import { Clock, ArrowUpRight } from 'lucide-react'
 
 export const metadata = {
   title: 'Insights',
@@ -122,55 +122,6 @@ export default function InsightsPage() {
           </div>
         </div>
       </section>
-
-      {/* ── NEWSLETTER / NOTIFY ── */}
-      <section style={{ background: 'var(--surface-card)', paddingBlock: 'var(--section-y)' }}>
-        <div className="nb-container">
-          <div style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>
-            <span className="nb-eyebrow" style={{ justifyContent: 'center' }}>Stay informed</span>
-            <h2 style={{ fontSize: '32px', marginTop: '18px', letterSpacing: '-0.02em' }}>
-              Get notified when new articles are published.
-            </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '16px', lineHeight: 1.65, marginTop: '14px' }}>
-              Practical insights on enterprise cloud modernisation, AWS architecture, and FinOps — published when they are worth reading, not on a publishing schedule.
-            </p>
-            <div style={{ display: 'flex', gap: '12px', marginTop: '28px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <input
-                className="nb-input"
-                type="email"
-                placeholder="you@company.com"
-                style={{ maxWidth: '320px' }}
-              />
-              <button className="nb-btn nb-btn--accent">
-                Notify Me
-                <ArrowRight size={16} />
-              </button>
-            </div>
-            <p style={{ fontSize: '12px', color: 'var(--text-faint)', marginTop: '12px', fontFamily: 'var(--font-mono)' }}>
-              No spam. Unsubscribe any time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <div style={{ background: 'var(--bg-page)' }}>
-        <div className="nb-container" style={{ paddingBlock: '72px', textAlign: 'center' }}>
-          <span className="nb-eyebrow">Ready to talk?</span>
-          <h2
-            className="nb-display-2"
-            style={{ marginTop: '18px', fontSize: '38px', maxWidth: '660px', marginInline: 'auto' }}
-          >
-            Turn insight into action with a free discovery call.
-          </h2>
-          <div style={{ marginTop: '28px' }}>
-            <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--lg">
-              Book a 30-Min Discovery Call
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </div>
     </>
   )
 }

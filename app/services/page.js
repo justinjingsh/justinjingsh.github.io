@@ -210,25 +210,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      {/* ── CTA ── */}
-      <div style={{ background: 'var(--bg-page)' }}>
-        <div className="nb-container" style={{ paddingBlock: '72px', textAlign: 'center' }}>
-          <span className="nb-eyebrow">Not sure which product fits?</span>
-          <h2
-            className="nb-display-2"
-            style={{ marginTop: '18px', fontSize: '40px', maxWidth: '680px', marginInline: 'auto' }}
-          >
-            Start with a free discovery call. We find the right entry point together.
-          </h2>
-          <div style={{ marginTop: '32px' }}>
-            <Link href="/contact" className="nb-btn nb-btn--accent nb-btn--lg">
-              Book a 30-Min Discovery Call
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </div>
     </>
   )
 }

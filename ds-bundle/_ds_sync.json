@@ -1,1 +1,0 @@
-{"shape":"package","pkg":"photon-portal@1.0.0","syncedAt":"2026-06-27T00:00:00Z","components":["Button","Badge","Card","IconBadge","Stat","Eyebrow","Field","BlueprintSection"],"note":"Minimal anchor — manually authored thin wrappers over Photon CSS class system."}
