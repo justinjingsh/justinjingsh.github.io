@@ -3,27 +3,27 @@ import '../css/components.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-const SITE_URL = 'https://justinjingsh.github.io'
+const SITE_URL = 'https://lyranova.com.au'
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    template: '%s — Photon',
-    default: 'Photon — Enterprise Cloud & AWS Architecture',
+    template: '%s — Lyranova',
+    default: 'Lyranova — Enterprise Cloud & AWS Architecture',
   },
   description:
     'Enterprise cloud modernisation advisory. We help mid-market and large enterprises design scalable AWS architectures, modernise legacy systems, and implement high-impact cloud transformation programs.',
   openGraph: {
     type: 'website',
-    siteName: 'Photon',
-    title: 'Photon — Enterprise Cloud & AWS Architecture',
+    siteName: 'Lyranova',
+    title: 'Lyranova — Enterprise Cloud & AWS Architecture',
     description:
       'Enterprise cloud modernisation advisory. Scalable AWS architectures, legacy modernisation, and cloud transformation programs for mid-market and enterprise organisations.',
     url: SITE_URL,
   },
   twitter: {
     card: 'summary',
-    title: 'Photon — Enterprise Cloud & AWS Architecture',
+    title: 'Lyranova — Enterprise Cloud & AWS Architecture',
     description:
       'Enterprise cloud modernisation advisory. Scalable AWS architectures, legacy modernisation, and cloud transformation programs.',
   },

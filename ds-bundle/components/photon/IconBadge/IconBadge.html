@@ -1,0 +1,31 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { padding: 28px; background: var(--bg-page); display: flex; gap: 16px; align-items: flex-start; }
+  </style>
+</head>
+<body>
+  <!-- Accent (default) -->
+  <div class="nb-icon-badge">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+  </div>
+  <!-- Navy -->
+  <div class="nb-icon-badge nb-icon-badge--navy">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+  </div>
+  <!-- Accent in a card context -->
+  <div class="nb-card" style="display:flex;gap:16px;align-items:flex-start;padding:20px;">
+    <div class="nb-icon-badge">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    </div>
+    <div>
+      <h4 style="font-size:1rem;margin:0 0 4px;">Infrastructure Optimisation</h4>
+      <p style="font-size:0.875rem;color:var(--text-body);margin:0;">Right-sizing and cost reduction for AWS workloads.</p>
+    </div>
+  </div>
+</body>
+</html>

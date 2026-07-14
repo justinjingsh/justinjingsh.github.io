@@ -6,7 +6,7 @@ export const metadata = {
   description:
     'Four standardised consulting products — Cloud Architecture Health Check, AWS Migration Blueprint, Legacy Modernisation Strategy, and Cloud Cost Optimisation. Fixed scope, clear deliverables, measurable outcomes.',
   openGraph: {
-    title: 'Services — Photon',
+    title: 'Services — Lyranova',
     description:
       'Four standardised consulting products with fixed scope, clear deliverables, and measurable outcomes for enterprise cloud modernisation.',
   },

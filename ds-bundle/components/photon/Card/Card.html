@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { padding: 28px; background: var(--bg-page); display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    h3 { font-size: var(--text-h4-size); margin-bottom: 8px; color: var(--text-strong); }
+    p { font-size: var(--text-sm-size); color: var(--text-body); line-height: 1.55; }
+  </style>
+</head>
+<body>
+  <div class="nb-card">
+    <h3>Default Card</h3>
+    <p>White surface, subtle border. Use for content sections and information panels.</p>
+  </div>
+  <div class="nb-card nb-card--ruled">
+    <h3>Ruled Card</h3>
+    <p>Stronger border weight. For cards that need more visual separation in dense grids.</p>
+  </div>
+  <div class="nb-card nb-card--interactive">
+    <h3>Interactive Card</h3>
+    <p>Lifts on hover with increased border and shadow. Use for clickable card links.</p>
+  </div>
+</body>
+</html>

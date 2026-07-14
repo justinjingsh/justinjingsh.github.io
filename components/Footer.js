@@ -19,7 +19,7 @@ export default function Footer() {
                   color: 'var(--text-strong)',
                 }}
               >
-                Photon
+                Lyranova
               </span>
             </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.6 }}>
@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="nb-footer-col">
             <div className="nb-footer-col-title">Elsewhere</div>
             <a href="https://linkedin.com/in/justinjing" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:test@gmail.com">test@gmail.com</a>
+            <a href="mailto:support@lyranova.com.au">support@lyranova.com.au</a>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
           }}
         >
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--text-faint)' }}>
-            &copy; 2026 Photon &mdash; Principal Enterprise Architecture Consultant
+            &copy; 2026 Lyranova &mdash; Principal Enterprise Architecture Consultant
           </span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--text-faint)' }}>
             Remote &middot; Australia &middot; APAC Delivery

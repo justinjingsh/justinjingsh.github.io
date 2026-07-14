@@ -6,7 +6,7 @@ export const metadata = {
   description:
     'Thought leadership on enterprise cloud modernisation, AWS architecture, FinOps, and legacy system transformation. Practical guidance for CTOs and Architecture Leads navigating complex cloud programs.',
   openGraph: {
-    title: 'Insights — Photon',
+    title: 'Insights — Lyranova',
     description:
       'Thought leadership on enterprise cloud modernisation, AWS architecture, FinOps, and legacy system transformation.',
   },

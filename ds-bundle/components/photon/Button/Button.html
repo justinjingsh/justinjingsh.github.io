@@ -1,0 +1,38 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { padding: 28px; background: var(--bg-page); }
+    .row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .label { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); width: 80px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <span class="label">accent</span>
+    <button class="nb-btn nb-btn--accent">Get Started</button>
+    <button class="nb-btn nb-btn--accent nb-btn--sm">Get Started</button>
+    <button class="nb-btn nb-btn--accent nb-btn--lg">Get Started</button>
+  </div>
+  <div class="row">
+    <span class="label">primary</span>
+    <button class="nb-btn nb-btn--primary">Learn More</button>
+    <button class="nb-btn nb-btn--primary nb-btn--sm">Learn More</button>
+    <button class="nb-btn nb-btn--primary nb-btn--lg">Learn More</button>
+  </div>
+  <div class="row">
+    <span class="label">secondary</span>
+    <button class="nb-btn nb-btn--secondary">View Case Study</button>
+    <button class="nb-btn nb-btn--secondary nb-btn--sm">View Case Study</button>
+  </div>
+  <div class="row">
+    <span class="label">ghost</span>
+    <button class="nb-btn nb-btn--ghost">Read More</button>
+    <button class="nb-btn nb-btn--ghost nb-btn--sm">Read More</button>
+  </div>
+</body>
+</html>

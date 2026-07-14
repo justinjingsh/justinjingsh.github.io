@@ -1,0 +1,26 @@
+<!-- @dsCard group="Components" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../../styles.css">
+  <style>
+    body { padding: 28px; background: var(--bg-page); display: flex; flex-direction: column; gap: 20px; max-width: 420px; }
+  </style>
+</head>
+<body>
+  <div class="nb-field">
+    <label class="nb-label" for="name">Full Name</label>
+    <input class="nb-input" id="name" type="text" placeholder="Justin Jing">
+  </div>
+  <div class="nb-field">
+    <label class="nb-label" for="email">Work Email</label>
+    <input class="nb-input" id="email" type="email" placeholder="justin@company.com">
+  </div>
+  <div class="nb-field">
+    <label class="nb-label" for="msg">Message</label>
+    <textarea class="nb-textarea" id="msg" rows="4" placeholder="Tell us about your project…"></textarea>
+  </div>
+  <button class="nb-btn nb-btn--accent">Send Message</button>
+</body>
+</html>

@@ -25,9 +25,9 @@ export default function Nav() {
             src="/icons/icon-a2eee9cc.svg"
             width={34}
             height={34}
-            alt="Photon"
+            alt="Lyranova"
           />
-          <span className="nb-nav-wordmark">Photon</span>
+          <span className="nb-nav-wordmark">Lyranova</span>
         </Link>
         <nav className="nb-nav-links">
           <Link href="/" className={isActive(pathname, '/') ? 'active' : undefined}>

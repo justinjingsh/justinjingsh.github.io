@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a GitHub Pages personal site branded as **Photon — Cloud & .NET Architecture**, built with **Next.js 14** (App Router, static export).
+This is a GitHub Pages personal site branded as **Lyranova — Cloud & .NET Architecture**, built with **Next.js 14** (App Router, static export), served on the custom domain `lyranova.com.au` (see `public/CNAME`).
 
 ## Repository structure
 
@@ -30,8 +30,8 @@ css/
 public/
   fonts/              — self-hosted IBM Plex Mono (400/500/600) and IBM Plex Sans (700) as woff2
   icons/
-    icon-6eb1084d.svg — Photon logo mark (dark backgrounds / transparent nav)
-    icon-a2eee9cc.svg — Photon logo mark (light backgrounds / solid nav)
+    icon-6eb1084d.svg — Lyranova logo mark (dark backgrounds / transparent nav)
+    icon-a2eee9cc.svg — Lyranova logo mark (light backgrounds / solid nav)
 
 .github/workflows/deploy.yml — GitHub Actions: npm ci → next build → deploy out/ to GitHub Pages
 ```

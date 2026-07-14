@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { ArrowRight, AlertTriangle, Layers, TrendingUp, Activity, Map, RefreshCw, BarChart3, Award, Target, Users, ArrowUpRight } from 'lucide-react'
 
 export const metadata = {
-  title: 'Photon — Enterprise Cloud & AWS Architecture',
+  title: 'Lyranova — Enterprise Cloud & AWS Architecture',
   description:
     'We help mid-market and large enterprises accelerate cloud modernisation — scalable AWS architectures, legacy system transformation, and FinOps optimisation with pragmatic delivery frameworks.',
   openGraph: {
-    title: 'Photon — Enterprise Cloud & AWS Architecture',
+    title: 'Lyranova — Enterprise Cloud & AWS Architecture',
     description:
       'We help mid-market and large enterprises accelerate cloud modernisation — scalable AWS architectures, legacy system transformation, and FinOps optimisation.',
   },

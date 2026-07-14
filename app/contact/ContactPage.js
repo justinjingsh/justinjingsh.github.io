@@ -166,7 +166,7 @@ export default function ContactPage() {
               {/* Contact info */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {[
-                  { icon: <Mail size={20} />, label: 'Email', value: '', href: 'mailto:test@gmail.com' },
+                  { icon: <Mail size={20} />, label: 'Email', value: 'support@lyranova.com.au', href: 'mailto:support@lyranova.com.au' },
                   { icon: <Linkedin size={20} />, label: 'LinkedIn', value: '/in/', href: 'https://linkedin.com/in/test' },
                   { icon: <MapPin size={20} />, label: 'Based', value: 'Remote · Australia hours' },
                 ].map(({ icon, label, value, href }) => (

@@ -6,7 +6,7 @@ export const metadata = {
   description:
     'Real enterprise cloud transformation outcomes — 60% infrastructure cost reduction, 8× faster settlement, HIPAA-ready AWS Landing Zones in six weeks. Measurable results from pragmatic delivery.',
   openGraph: {
-    title: 'Case Studies — Photon',
+    title: 'Case Studies — Lyranova',
     description:
       'Real enterprise cloud transformation outcomes — 60% infrastructure cost reduction, 8× faster settlement, HIPAA-ready AWS Landing Zones in six weeks.',
   },

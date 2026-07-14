@@ -1,6 +1,6 @@
-# Photon — Cloud & .NET Architecture
+# Lyranova — Cloud & .NET Architecture
 
-Personal consulting site, published at [justinjingsh.github.io](https://justinjingsh.github.io).
+Personal consulting site, published at [lyranova.com.au](https://lyranova.com.au).
 
 Built with **Next.js 14** (App Router, static export) and deployed to GitHub Pages via GitHub Actions.
 

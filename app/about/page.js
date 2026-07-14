@@ -6,7 +6,7 @@ export const metadata = {
   description:
     'Principal Enterprise Architecture Consultant with 20+ years of experience driving cloud modernisation across Australia and APAC. Bridging high-level business strategy with pragmatic AWS cloud delivery.',
   openGraph: {
-    title: 'About — Photon',
+    title: 'About — Lyranova',
     description:
       'Principal Enterprise Architecture Consultant with 20+ years of experience driving cloud modernisation across Australia and APAC.',
   },
@@ -16,7 +16,7 @@ const TIMELINE = [
   { year: '2004', title: 'Enterprise Engineer', body: 'Built and shipped mission-critical line-of-business systems for large organisations across finance and logistics.' },
   { year: '2011', title: 'Solution Architect', body: 'Owned architecture for high-throughput distributed platforms and the cross-functional teams running them.' },
   { year: '2017', title: 'Cloud Transformation Lead', body: 'Led large-scale legacy-to-AWS migrations and cloud modernisation programs across Australia, Vietnam, and the Philippines.' },
-  { year: '2021', title: 'Advisory Boutique Founded', body: 'Founded Photon to deliver principal-level AWS architecture advice directly to enterprises — without the overhead of tier-1 consulting firms.' },
+  { year: '2021', title: 'Advisory Boutique Founded', body: 'Founded Lyranova to deliver principal-level AWS architecture advice directly to enterprises — without the overhead of tier-1 consulting firms.' },
 ]
 
 const DIFFERENTIATORS = [
@@ -67,7 +67,7 @@ export default function AboutPage() {
             Twenty years building the systems enterprises depend on.
           </h1>
           <p style={{ marginTop: '22px', fontSize: '19px', lineHeight: 1.6, color: 'var(--text-muted)', maxWidth: '640px' }}>
-            Photon is a specialist cloud modernisation advisory a principal enterprise architect with deep AWS expertise and a track record delivering complex transformations across Australia and APAC.
+            Lyranova is a specialist cloud modernisation advisory a principal enterprise architect with deep AWS expertise and a track record delivering complex transformations across Australia and APAC.
           </p>
         </div>
       </div>
@@ -97,10 +97,10 @@ export default function AboutPage() {
             </div>
             <div style={{ fontSize: '18px', lineHeight: 1.75, color: 'var(--text-body)', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <p>
-                With over 20 years of hands-on experience driving technology modernisation across complex enterprise landscapes, I founded Photon to bridge the gap between high-level business strategy and pragmatic AWS cloud delivery.
+                With over 20 years of hands-on experience driving technology modernisation across complex enterprise landscapes, I founded Lyranova to bridge the gap between high-level business strategy and pragmatic AWS cloud delivery.
               </p>
               <p>
-                Having led large-scale cloud transformations and coordinated cross-border engineering teams across Australia, Vietnam, and the Philippines, Photon brings tier-1 consulting frameworks without the tier-1 overhead — or the junior team bait-and-switch.
+                Having led large-scale cloud transformations and coordinated cross-border engineering teams across Australia, Vietnam, and the Philippines, Lyranova brings tier-1 consulting frameworks without the tier-1 overhead — or the junior team bait-and-switch.
               </p>
               <p>
                 My approach is deliberately pragmatic. I have seen too many cloud programmes fail because of unrealistic blueprints, big-bang rewrites, and change-resistant delivery models. Every engagement starts from where you actually are today and builds a sequenced path the business can fund and the team can execute.

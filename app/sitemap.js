@@ -1,4 +1,4 @@
-const SITE_URL = 'https://justinjingsh.github.io'
+const SITE_URL = 'https://lyranova.com.au'
 
 export default function sitemap() {
   return [
