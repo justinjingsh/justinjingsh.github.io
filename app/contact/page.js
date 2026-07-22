@@ -1,13 +1,13 @@
 import ContactPage from './ContactPage'
 
 export const metadata = {
-  title: 'Book a Discovery Call',
+  title: 'Contact',
   description:
-    'Book a free 30-minute Architecture Strategy Session. We discuss your current pain points, target architecture, and an initial risk and opportunity assessment. Open to enterprise IT executives and technical leads.',
+    'Get in touch about a project — full-stack web & API development, mobile apps, cloud architecture, legacy modernisation, API integration, or fractional engineering leadership. Send a message, response within one business day.',
   openGraph: {
-    title: 'Book a Discovery Call — Lyranova',
+    title: 'Contact — Lyranova',
     description:
-      'Book a free 30-minute Architecture Strategy Session. We discuss your cloud challenges and leave you with a clear modernisation direction.',
+      'Get in touch about a project. Send a message, response within one business day.',
   },
 }
 

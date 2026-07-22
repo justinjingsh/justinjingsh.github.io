@@ -1,6 +1,6 @@
 # Photon Design System — Conventions for Claude Design
 
-Photon is the brand for **justinjingsh.github.io** — an enterprise AWS consulting boutique. The aesthetic is engineering-grade, neutral, and premium: think Bloomberg Terminal meets Vercel dashboard.
+Photon is the design system for this site — an enterprise consulting boutique. The aesthetic is engineering-grade, neutral, and premium: think Bloomberg Terminal meets Vercel dashboard.
 
 ## Setup
 

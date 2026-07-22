@@ -23,22 +23,19 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.6 }}>
-              Enterprise cloud modernisation advisory. Helping organisations design scalable AWS architectures and deliver pragmatic cloud transformation programs across Australia and APAC.
+              Independent solution architect and full-stack engineer. 20+ years building production software — available for fixed-price projects, hourly engagements, and fractional technical leadership.
             </p>
           </div>
 
           <div className="nb-footer-col">
             <div className="nb-footer-col-title">Practice</div>
             <Link href="/services">Services</Link>
-            <Link href="/work">Case Studies</Link>
-            <Link href="/insights">Insights</Link>
             <Link href="/about">About</Link>
           </div>
 
           <div className="nb-footer-col">
             <div className="nb-footer-col-title">Engage</div>
             <Link href="/contact">Contact</Link>
-            <Link href="/about">Retainer Advisory</Link>
           </div>
 
           <div className="nb-footer-col">
@@ -59,10 +56,10 @@ export default function Footer() {
           }}
         >
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--text-faint)' }}>
-            &copy; 2026 Lyranova &mdash; Principal Enterprise Architecture Consultant
+            &copy; 2026 Lyranova &mdash; Freelance Solution Architect &amp; Full-Stack Engineer
           </span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--text-faint)' }}>
-            Remote &middot; Australia &middot; APAC Delivery
+            Sydney, Australia &middot; Remote-friendly (AEST)
           </span>
         </div>
       </div>

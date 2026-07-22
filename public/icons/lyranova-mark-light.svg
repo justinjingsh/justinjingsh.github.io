@@ -1,8 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" role="img" aria-label="Lyranova">
-  <path d="M32 4 C34 20 40 28 60 32 C40 36 34 44 32 60 C30 44 24 36 4 32 C24 28 30 20 32 4 Z" fill="url(#gl)"></path>
-  <circle cx="49" cy="15" r="2.5" fill="#2B6BE4"></circle>
-  <circle cx="53" cy="24" r="1.5" fill="#9FB3CC"></circle>
-  <defs><linearGradient id="gl" x1="10" y1="10" x2="55" y2="55" gradientUnits="userSpaceOnUse">
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(-28 32 32)" stroke="#9FB3CC" stroke-width="2"></ellipse>
+  <g fill="url(#gl)">
+    <path d="M32 6 L35.5 28.5 L32 32 L28.5 28.5 Z"></path>
+    <path d="M32 58 L35.5 35.5 L32 32 L28.5 35.5 Z"></path>
+    <path d="M6 32 L28.5 35.5 L32 32 L28.5 28.5 Z"></path>
+    <path d="M58 32 L35.5 35.5 L32 32 L35.5 28.5 Z"></path>
+    <path d="M15 15 L30 30 L32 32 L28 28.5 Z" opacity="0.85"></path>
+    <path d="M49 49 L34 34 L32 32 L36 35.5 Z" opacity="0.85"></path>
+  </g>
+  <circle cx="32" cy="32" r="4" fill="#173FA0"></circle>
+  <circle cx="52" cy="12" r="2.5" fill="#2B6BE4"></circle>
+  <circle cx="56" cy="21" r="1.5" fill="#9FB3CC"></circle>
+  <defs><linearGradient id="gl" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#4A8CFF"></stop><stop offset="1" stop-color="#173FA0"></stop>
-  </linearGradient></defs>
-</svg>
+  </linearGradient></defs></svg>
